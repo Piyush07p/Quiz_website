@@ -1,0 +1,238 @@
+ *{
+     margin: 0;
+     padding: 0;
+ }
+ html{
+    font-size: 62.5%;
+ }
+ 
+
+
+/* --------------------quiz_section--------------------- */
+.section{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+
+}
+.quiz{
+    width: 45%;
+    border-radius: 0.6rem;
+    height: 60rem;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
+    display: none;
+
+   
+}
+
+.quiz .img{
+   width: 100%;
+   height: 35%;
+
+}
+.img img{
+    width: 12rem;
+    margin: 3% 43%;
+}
+.img h1{
+         margin: 0 3%;
+         color: grey;
+         font-size: 2rem;
+         letter-spacing: 0.1rem;
+}
+
+.img p{
+    margin: 1rem 3%;
+    font-size: 1.6rem;
+
+}
+.option{
+    width: 100%;
+    height: 20rem;
+    padding: 2rem;
+}
+
+.option ul{
+    width: 100%;
+    height: 20rem;
+    font-size: 2rem;
+    
+}
+.option ul li{
+    list-style:none;
+    width: 94%;
+    height: 3.5rem;
+    border: 2px solid cyan;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    cursor:pointer;
+    
+}
+
+/* ------------------------button------------------- */
+.button{
+           width: 100%;
+           display: flex;
+           justify-content: space-around;
+           
+
+}
+.skip{
+    width: 10rem;
+    height: 3rem;
+    background-color: rgb(80, 230, 80);
+    color: #fff;
+    letter-spacing: 0.2rem;
+    font-size:1.5rem;
+    border: none;
+    cursor:pointer;
+    border-radius: 0.3rem;
+}
+.confirm{
+    width: 12rem;
+    height: 3rem;
+    background-color: rgb(80, 230, 80);
+    color: #fff;
+    letter-spacing: 0.2rem;
+    font-size:1.5rem;
+    border: none;
+    cursor:pointer;
+    border-radius: 0.3rem;
+}
+
+                   
+/* ---------------------end(btn)-------------------- */
+
+/* ---------------------timer--------------------------- */
+.timer{
+    width: 30rem;
+    height: 16rem;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
+    display: none;
+    
+}
+
+.timer div{
+  
+    height: 50%; 
+
+}
+ .t1{
+    text-align: center;
+
+}
+.t1 h2{
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: rgb(133, 131, 131);
+}
+.t2{
+    text-align: center;
+   
+}
+.t2 span{
+
+    padding: 2.5rem;
+    border: 3px solid rgb(79, 211, 53);
+    color: #fff;
+    background-color: rgb(90, 90, 90);
+    border-radius: 50%;
+    box-sizing: border-box;
+    
+    box-shadow: -10px 10px 40px rgba(0,0,0,0.3);
+    font-size: 2rem;
+
+}
+
+
+/* ---------------------result_section----------------------- */
+.result{
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.result_box{
+
+    padding: 2rem;
+    width: 30rem;
+    height: 22rem;
+    margin: 6rem 0;
+    box-shadow: -10px 10px 40px rgba(0,0,0,0.3);
+
+
+}
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.fa-crown{
+    width:10rem ;
+    height: 10rem;
+    font-size: 8rem;
+   color: rgb(136, 136, 255);
+
+}
+.complete_text{
+    font-size:2rem;
+    text-align: center;
+}
+.score{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.btn button{
+    background-color: rgb(106, 246, 106);
+    color: #fff;
+    border: none;
+    letter-spacing: 0.1rem;
+    border-radius: 0.4rem;
+    width: 10rem;
+    height: 3.2rem;
+    cursor: pointer;
+    margin: 0 1rem;
+    
+}
+.btn button:hover{
+    background-color: rgb(47, 173, 47);
+}
+/* -----------------media_query------------------- */
+
+@media screen and (max-width:780px) {
+   .section{
+    flex-wrap: wrap-reverse;
+
+   }
+    .quiz{
+        width: 65%;
+        border-radius: 0.6rem;
+        height: 60rem;
+        box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
+         margin:2rem 0;
+       
+    }
+}
+
+@media screen and (max-width:650px){
+    .quiz{
+        width: 75%;
+    }
+}
