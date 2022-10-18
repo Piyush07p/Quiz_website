@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="public/css/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/css/fontawesome.min.css">
+    <link rel="stylesheet" href="public/css/start.css">
+    <title>Document</title>
+    <style>
+      .color{
+        background:#2b3d68;
+        color: #fff;
+      }
+      .disabled{
+        pointer-events: none;
+    }
+    </style>
+
+</head>
+<body>
+
+<!-- ----------------to_start_quiz--------------- -->
+
+
+    <div class="start">
+       <div class="start_div">
+           <label for="">No. of questions <input  type="number" ></label>
+                   
+        <button onclick="startQ()">Start Quiz</button>
+       </div>
+    </div>
+
+
+<!-- --------------quiz_section---------------- -->
+    <section class="section">
+
+        <div class="quiz">
+                <div class="img">
+                    <img src="images/quiz_bulb.jpg" alt="">
+                    <h1>Question <span id="que.no">1</span>/10</h1>
+                    <p id="que">Modi hai to kya ?</p>
+                </div>
+                <div class="option">
+                        <ul  >
+                            <li class="li" onclick="changeC(0)" ><span> </span>mumkin hai</li>
+                            <li class="li" onclick="changeC(1)" ><span> </span> berozgari</li>
+                            <li class="li" onclick="changeC(2)"><span> </span>mai nahi batauga</li>
+                            <li class="li" onclick="changeC(3)"><span> </span>privatization</li>
+                        </ul>
+
+                </div>
+                <div class="button">
+                    <div>
+                        <button class="skip">skip</button>
+                    </div>
+                    <div>
+                        <button  class="confirm">Confirm</button>
+                    </div>
+                </div>
+
+        </div>
+
+    <!-- ---------------------timer_section---------------------- -->
+
+        <div class="timer">
+                 <div class="t1">
+                    <h2>Time remaining</h2>
+    
+                 </div>
+                 <div class="t2">
+                    <span>40</span>
+                 </div>
+        </div>
+    </section>
+
+
+    <!-- -----------------result_section--------------- -->
+
+   
+  <section class="result">
+      <div class="result_box">
+          <div class="icon">
+              <i class="fas fa-crown"></i>
+          </div>
+          <div class="complete_text">You have completed the Quiz!</div>
+          <div class="score">
+              <p>you got only <span id="score_span">0</span> out of <span>10</span> </p>
+
+          </div>
+          <div class="btn">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+          </div>
+      </div>
+  </section>
+
+</body>
+<script  src="public/js/index.js"></script>
+
+<!-- <script type="module" src="./index.js"></script> -->
+
+</html>
