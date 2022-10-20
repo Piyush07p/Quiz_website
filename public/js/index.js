@@ -80,6 +80,14 @@ const question=[
         'c':'c) 55',
         'd':'d) 60',
         'correct':0
+     },
+     {
+        'que':'Z,U,Q, _ , L',
+        'a':'a) M',
+        'b':'b) N',
+        'c':'c) O',
+        'd':'d) I',
+        'correct':1
      }
 ]
  
@@ -193,6 +201,7 @@ const conf_btn=document.querySelector(".confirm");
             
             checked = false;
            }
+
    
     }
     
