@@ -88,6 +88,10 @@
           <div class="complete_text">You have completed the Quiz!</div>
           <div class="score">
               <p>you got only <span id="score_span">0</span> out of <span>10</span> </p>
+              <p class="time_taken">time taken: <span class="hund">00</span>:
+                <span class="tens">00</span>:
+                <span class="ones">00</span> 
+             </p>
 
           </div>
           <div class="btn">
@@ -95,11 +99,58 @@
             <button class="quit">Quit Quiz</button>
           </div>
       </div>
+      <div class="review_sec">
+         <a href="review.html"><button class="review_btn">Review result</button></a> 
+      </div>
   </section>
-
+  <script  src="public/js/index.js"></script>
 </body>
-<script  src="public/js/index.js"></script>
 
+<script>
+    let ones=00;
+    let tens=00;
+    let hund=00;
+    let interval;
+
+    let appones=document.querySelector('.ones');
+    let apptens=document.querySelector('.tens');
+    let apphund=document.querySelector('.hund');
+    
+    function startimer(){
+        ones++;
+        if(ones<=9)
+        {
+            appones.innerText="0"+ones;
+        }
+        if(ones>9)
+        {
+            appones.innerText=ones;
+        }
+        if(ones>99)
+        {
+            tens++;
+            apptens.innerHTML="0"+tens;
+            ones=0;
+            appones.innerHTML="0"+0;
+        }
+        if(tens>9)
+        {
+            apptens.innerHTML=tens;
+        }
+        if(tens>59)
+        {
+               hund++;
+               apphund.innerHTML="0"+hund;
+               tens=0;
+               apptens.innerHTML="0"+0;
+        }
+
+    }
+
+    //-----------------to start quiz-------------
+    
+
+</script>
 <!-- <script type="module" src="./index.js"></script> -->
 
 </html>

@@ -160,6 +160,7 @@
     justify-content: center;
     align-items: center;
     display: none;
+    flex-direction: column;
 }
 
 .result_box{
@@ -172,6 +173,22 @@
 
 
 }
+.review_sec button{
+         width: 18rem;
+         height: 3.5rem;
+         background-color:  rgb(106, 246, 106);
+         border: none;
+         font-size:1.6rem ;
+         letter-spacing: 0.1rem;
+         color: #fff;
+         cursor: pointer;
+         border-radius: 0.5rem;
+}
+.review_sec button:hover{
+    background-color: rgb(47, 173, 47);
+}
+
+
 .icon{
     display: flex;
     justify-content: center;
@@ -180,7 +197,7 @@
     width:10rem ;
     height: 10rem;
     font-size: 8rem;
-   color: rgb(136, 136, 255);
+    color: rgb(136, 136, 255);
 
 }
 .complete_text{

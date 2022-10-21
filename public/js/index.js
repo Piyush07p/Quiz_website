@@ -88,6 +88,15 @@ const question=[
         'c':'c) O',
         'd':'d) I',
         'correct':1
+     },
+     {
+        'que':'CASUAL is written as "111914161956" REFER="1834723418" then REFUSAL=? ',
+        'a':'a) 18347216145613',
+        'b':'b) 187234161411956',
+        'c':'c) 18347216141956',
+        'd':'d) none',
+        'correct':2
+
      }
 ]
  
@@ -125,6 +134,8 @@ const loadques=(ind)=>{
     options[3].innerText=data.d
     ans = data.correct;
     arr.push(splice)
+    
+
 }
 
 
@@ -140,15 +151,22 @@ loadques(0);
 const start_btn=document.querySelector('.start button');
 const start=document.querySelector('.start')
 
+function count_time(){
+    clearInterval(interval);
+    interval= setInterval(startimer,10);
+}
+
 const quiz_box=document.querySelector('.quiz')
 const timer=document.querySelector('.timer')
 function startQ(){
+      
       quiz_box.style.display="unset";
       start.style.display="none";
       timer.style.display="unset";
 
     //timer will start on starting the quiz
       startTimer(40);
+      count_time();
       
 }
 
@@ -184,6 +202,8 @@ var index=0 ;
 const score_count = document.querySelector("#score_span");
 const conf_btn=document.querySelector(".confirm");
 
+
+
     conf_btn.onclick=()=>{
     
         if(queno.innerText<10 )
@@ -200,6 +220,7 @@ const conf_btn=document.querySelector(".confirm");
             startTimer(timevalue);
             
             checked = false;
+        
            }
 
    
@@ -215,7 +236,11 @@ const conf_btn=document.querySelector(".confirm");
         quiz_box.style.display='none';
         timer.style.display='none';
         result.style.display='flex';
-        console.log(score)
+       
+        // to stop the count_time() function
+        clearInterval(interval);
+            
+    
 
         // for updating the score
         score_count.innerText=score; 
@@ -312,6 +337,14 @@ replay.addEventListener("click",()=>{
    startTimer(timevalue)
    score=0;
    loadques(0);
-
+   ones="0";
+   tens="0";
+   hund="0";
+   count_time();
+   
 
 })
+
+
+// ----------------------review_sec--------------
+

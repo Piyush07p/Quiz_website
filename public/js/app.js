@@ -1,6 +1,6 @@
 
 
-export let  question=[{
+export let  q1=[{
 
     'que':'what is the full form of smtp',
     'a':'a) simple mail testing protocol',
