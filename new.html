@@ -7,21 +7,43 @@
     <title>Document</title>
 </head>
 <body>
-    
+        <h1>this is the heading tag</h1>
 </body>
 <script>
-    let sum=0;
-    let rem=0;
-    let a=parseInt(prompt("enter the decimal number"));
-    let j=1;
-    for(let i=0;i<a.length;i++)
-    {
-        rem=a%2;
-        sum+=rem*j;
-        j*=10;
+    let arr=[
+         {
+             name:'mark',
+             age:23
+         },
+         {
+             name:'mike',
+             age:43
+         }
+    ]
+    let ar=[
+        {
+            name:'mahesh',
+            age:33
+        }
+    ]
+     for(let i=0;i<arr.length;i++)
+     {
+         document.write("</br>"+arr[i].name+"=>"+arr[i].age);
 
-    }
-    console.log(sum)
+     }
+     
+     for(let i=0;i<ar.length;i++)
+     {
+            arr.push(ar[i])
+     }
+
+     for(let i=0;i<arr.length;i++)
+     {
+         document.write("</br>"+arr[i].name+"=>"+arr[i].age);
+
+     }
+     
+    
 
 </script>
 </html>

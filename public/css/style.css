@@ -32,7 +32,7 @@
 }
 .img img{
     width: 12rem;
-    margin: 3% 43%;
+    margin: 3% 40%;
 }
 .img h1{
          margin: 0 3%;
@@ -239,12 +239,25 @@
 
    }
     .quiz{
-        width: 65%;
+        width: 80%;
+        height:10rem ;
         border-radius: 0.6rem;
         height: 60rem;
         box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
-         margin:2rem 0;
+        margin:2rem 0;
+    
        
+    }
+    .option{
+        height: 18rem;
+    }
+    .timer{
+        width: 23rem;
+        height: 10rem;
+    }
+    .t2 span{
+        padding: 1.5rem;
+        font-size: 1.6rem;
     }
 }
 

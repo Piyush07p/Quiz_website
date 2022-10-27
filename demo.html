@@ -29,7 +29,7 @@
        <div class="start_div">
            <label for="">No. of questions <input  type="number" ></label>
                    
-        <button onclick="startQ()">Start Quiz</button>
+        <button>Start Quiz</button>
        </div>
     </div>
 
@@ -45,10 +45,10 @@
                 </div>
                 <div class="option">
                         <ul  >
-                            <li class="li" onclick="changeC(0)" ><span> </span>mumkin hai</li>
-                            <li class="li" onclick="changeC(1)" ><span> </span> berozgari</li>
-                            <li class="li" onclick="changeC(2)"><span> </span>mai nahi batauga</li>
-                            <li class="li" onclick="changeC(3)"><span> </span>privatization</li>
+                            <li class="li" data-li="0" ><span> </span>mumkin hai</li>
+                            <li class="li" data-li="1" ><span> </span> berozgari</li>
+                            <li class="li" data-li="2" ><span> </span>mai nahi batauga</li>
+                            <li class="li" data-li="3" ><span> </span>privatization</li>
                         </ul>
 
                 </div>
@@ -103,7 +103,7 @@
          <a href="review.html"><button class="review_btn">Review result</button></a> 
       </div>
   </section>
-  <script  src="public/js/index.js"></script>
+ 
 </body>
 
 <script>
@@ -151,6 +151,7 @@
     
 
 </script>
-<!-- <script type="module" src="./index.js"></script> -->
+<!-- <script  src="public/js/index.js"></script> -->
+<script type="module" src="./public/js/index.js"></script>
 
 </html>
