@@ -8,7 +8,21 @@
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/cat.css">
     <title>Document</title>
-    
+    <style>
+        .logical_h1{
+            display: inline-block;
+        }
+        .logical_h1::after{
+            content: "";
+            display: block;
+            width: 21.3rem;
+            height: 0.3rem;
+            border-radius: 15rem;
+            background-color: #0eb582;
+
+            
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -17,9 +31,9 @@
      
         <nav class="navbar">
            <div id="close-navbar" class="fas fa-times"></div>
-           <a href="home.html">Home</a>
+           <a href="index.html">Home</a>
            <a href="#">Compete</a>
-           <a href="#">Practice</a>
+           <a href="practice.html">Practice</a>
            <a href="sign_up.html" id="account-btn">Login</a>
         </nav>
      
@@ -31,7 +45,7 @@
 
 
           <div class="reasoning">
-              <h2>REASONING</h2>
+              <h1 class="logical_h1">LOGICAL REASONING</h1>
           </div>
 
           <section class="reas_category">
