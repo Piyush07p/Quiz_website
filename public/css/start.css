@@ -5,10 +5,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #d9eee9;
     
 }
 .start_div{
-    background-color: rgb(213, 226, 228);
+    background-color: #33d6a5;
     
     width: 40rem;
     height: 30rem;
@@ -18,6 +19,9 @@
     justify-content: center;
     box-shadow: -10px 10px 40px rgba(0,0,0,0.3);
 
+}
+.start_div:hover{
+    background-color: #30b88f;
 }
 .start_div label{
     font-size: 2rem;

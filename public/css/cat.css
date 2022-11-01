@@ -16,7 +16,7 @@
 
 .reas_category div{
     display: flex;
-    height: 4rem;
+    height: 7rem;
     align-items: center;
     width: 100%;
     justify-content: space-between;
@@ -28,13 +28,18 @@
 .reas_category div h1{
     margin-left: 2rem;
 }
-.btn{
-       width: 8rem;
+.btn_{
+       width: 12rem;
        margin-right: 2rem;
-       height: 2rem;
-       background-color: rgb(148, 218, 44);
+       height: 3.2rem;
+       background-color:#0eb582;
        color: #fff;
        letter-spacing: 1px;
        border: none;
        cursor: pointer;
+       font-size: 1.6rem;
+}
+
+.btn_:hover{
+    background-color:#4acea6 ;
 }
