@@ -7,7 +7,7 @@
     'b':'b) simple mail testing parameter',
     'c':'c) simple mail transfer protocol',
     'd':'d) simple mail transfer practice',
-    'correct':1
+    'correct':1      
 },
 {
 
@@ -395,16 +395,53 @@ let q3=[
 
 ]
 
-let get
-const btn=document.querySelectorAll('.btn')
+let api=q2;
 
-Array.from(btn).forEach(elem =>{
-    elem.addEventListener('click',()=>{
-        get=elem.dataset.btn
-        console.log(get)
-    })
-})
+export  {api};
 
-export let api=q2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let get
+// const btn=document.querySelectorAll('.btn')
+
+// Array.from(btn).forEach(elem =>{
+//     elem.addEventListener('click',()=>{
+//         get=elem.dataset.btn
+//         console.log(get)
+//     })
+// })
+
+
+
 
 

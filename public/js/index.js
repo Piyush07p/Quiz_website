@@ -2,8 +2,10 @@
 import {api} from "./app.js";
 
 
-let question=[];
 
+
+let question=[];
+ 
 for(let i=0;i<api.length;i++)
 {
     question.push(api[i]);

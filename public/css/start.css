@@ -8,11 +8,34 @@
     background-color: #d9eee9;
     
 }
+.rules{
+    width:44rem;
+    height: 30rem;
+    background-color:#33d6a5 ;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+.rules h1{
+    text-align: center;
+}
+.rules ul{
+    color: white;
+    padding:2rem
+}
+
+.rules ul li{
+    list-style: none;
+    padding: 0.5rem 0;
+}
 .start_div{
     background-color: #33d6a5;
     
-    width: 40rem;
-    height: 30rem;
+    width: 44rem;
+    height: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;

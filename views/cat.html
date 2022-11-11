@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/cat.css">
+    <title>Document</title>
+    <style>
+        .logical_h1{
+            display: inline-block;
+        }
+        .logical_h1::after{
+            content: "";
+            display: block;
+            width: 21.3rem;
+            height: 0.3rem;
+            border-radius: 15rem;
+            background-color: #0eb582;
+            
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-lightbulb"></i> Quizzo </a>
+     
+        <nav class="navbar">
+           <div id="close-navbar" class="fas fa-times"></div>
+           <a href="/index">Home</a>
+           <a href="/compete">Compete</a>
+           <a href="/practice">Practice</a>
+           <a href="/sign_up" id="account-btn">Login</a>
+        </nav>
+     
+        <div class="icons">
+           <!-- <div id="account-btn" class="fas fa-user"></div> -->
+           <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+     </header>
+
+
+          <div class="reasoning">
+              <h1 class="logical_h1">LOGICAL REASONING</h1>
+          </div>
+
+          <section class="reas_category">
+            <div>
+                <h1>Coding Decoding</h1>
+              <a href="/demo"> <button onclick="clicker(1)" class="btn_">Go to quiz</button></a> 
+            </div>
+            <div>
+                <h1>Calendar</h1>
+                <a href=""><button onclick="clicker(2)" class="btn_">Go to quiz</button>
+                </a>
+            </div>
+            <div>
+                <h1>Blood Relation</h1>
+                <a href=""><button onclick="clicker(3)"  class="btn_">Go to quiz</button>
+                </a>
+            </div>
+            <div>
+                <h1>Seating Arrangement</h1>
+                <a href=""><button onclick="clicker(4)"  class="btn_">Go to quiz</button></a>
+            </div>
+
+          </section>
+          
+
+</body>
+<script src="public/js/app.js"></script>
+<script src="public/js/changes.js"></script>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/quiz_win.css">
+    <link rel="stylesheet" type="text/css" href="public/css/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/css/fontawesome.min.css">
+    <link rel="stylesheet" href="public/css/start.css">
+    <title>Document</title>
+    <style>
+      .color{
+        background:#2b3d68;
+        color: #fff;
+      }
+      .disabled{
+        pointer-events: none;
+    }
+    </style>
+
+</head>
+<body>
+
+<!-- ----------------to_start_quiz--------------- -->
+
+<!--###########-option to choose no. of questions-############ -->
+
+    <div class="start">
+
+        <div class="rules">
+            <h1>Rules of Quiz</h1>
+            <ul>
+                <li>1) The quiz contains 10 questions</li>
+                <li>2) Each question comes with time limit of 40 sec</li>
+                <li>3) There is no negative marking in the quiz</li>
+                <li>4) Press confirm button to lock the choice and skip button to skip question</li>
+                <li>5) Track your score and total time taken to attempt the quiz in last</li>
+            </ul>
+        </div>
+       <div class="start_div">
+           
+                   
+        <button>Start Quiz</button>
+       </div>
+    </div>
+
+
+<!-- --------------quiz_section---------------- -->
+    <section class="section">
+
+        <div class="quiz">
+                <div class="img">
+                    <img src="images/quiz_bulb.jpg" alt="">
+                    <h1>Question <span id="que.no">1</span>/10</h1>
+                    <p id="que">Modi hai to kya ?</p>
+                </div>
+                <div class="option">
+                        <ul  >
+                            <li class="li" data-li="0" ><span> </span>mumkin hai</li>
+                            <li class="li" data-li="1" ><span> </span> berozgari</li>
+                            <li class="li" data-li="2" ><span> </span>mai nahi batauga</li>
+                            <li class="li" data-li="3" ><span> </span>privatization</li>
+                        </ul>
+
+                </div>
+                <div class="button">
+                    <div>
+                        <button class="skip">Skip</button>
+                    </div>
+                    <div>
+                        <button  class="confirm">Confirm</button>
+                    </div>
+                </div>
+
+        </div>
+
+    <!-- ---------------------timer_section---------------------- -->
+
+        <div class="timer">
+                 <div class="t1">
+                    <h2>Time remaining</h2>
+    
+                 </div>
+                 <div class="t2">
+                    <span>40</span>
+                 </div>
+        </div>
+    </section>
+
+
+    <!-- -----------------result_section--------------- -->
+
+   
+  <section class="result">
+      <div class="result_box">
+          <div class="icon">
+              <i class="fas fa-crown"></i>
+          </div>
+          <div class="complete_text">You have completed the Quiz!</div>
+          <div class="score">
+              <p>you got only <span id="score_span">0</span> out of <span>10</span> </p>
+              <p class="time_taken">time taken: <span class="hund">00</span>:
+                <span class="tens">00</span>:
+                <span class="ones">00</span> 
+             </p>
+
+          </div>
+          <div class="btn">
+            <button class="restart">Replay Quiz</button>
+            <a href="/cat"><button class="quit">Quit Quiz</button></a>
+          </div>
+      </div>
+      <div class="review_sec">
+         <a href="review.html"><button class="review_btn">Review result</button></a> 
+      </div>
+  </section>
+ 
+</body>
+
+<script>
+    let ones=00;
+    let tens=00;
+    let hund=00;
+    let interval;
+
+    let appones=document.querySelector('.ones');
+    let apptens=document.querySelector('.tens');
+    let apphund=document.querySelector('.hund');
+    
+    function startimer(){
+        ones++;
+        if(ones<=9)
+        {
+            appones.innerText="0"+ones;
+        }
+        if(ones>9)
+        {
+            appones.innerText=ones;
+        }
+        if(ones>99)
+        {
+            tens++;
+            apptens.innerHTML="0"+tens;
+            ones=0;
+            appones.innerHTML="0"+0;
+        }
+        if(tens>9)
+        {
+            apptens.innerHTML=tens;
+        }
+        if(tens>59)
+        {
+               hund++;
+               apphund.innerHTML="0"+hund;
+               tens=0;
+               apptens.innerHTML="0"+0;
+        }
+
+    }
+
+    //-----------------to start quiz-------------
+    
+
+</script>
+<!-- <script  src="public/js/index.js"></script> -->
+<script type="module" src="./public/js/index.js"></script>
+
+
+</html>
