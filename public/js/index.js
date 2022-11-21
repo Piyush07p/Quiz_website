@@ -1,9 +1,6 @@
 
 import {api} from "./app.js";
 
-
-
-
 let question=[];
  
 for(let i=0;i<api.length;i++)
@@ -87,7 +84,7 @@ start_btn.onclick=()=>{
 
 // ------------------choose_options-------------------
 
-var li=document.querySelectorAll('li');
+var li=document.querySelectorAll('.li');
 
 Array.from(li).forEach(elem =>{
     elem.addEventListener('click',()=>{

@@ -396,8 +396,7 @@ let q3=[
 ]
 
 let api=q2;
-
-export  {api};
+export {api}
 
 
 

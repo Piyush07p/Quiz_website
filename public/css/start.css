@@ -74,3 +74,12 @@
     rem;
     margin: 1rem 0;
 }
+
+
+.color{
+    background:#2f3e62;
+    color: #fff;
+  }
+  .disabled{
+    pointer-events: none;
+}
