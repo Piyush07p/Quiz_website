@@ -1,5 +1,17 @@
 const mongoose=require('mongoose');
-mongoose.connect('mongodb://localhost:27017/minor_base')
+const dotenv=require('dotenv')
+dotenv.config({path:'./config.env'})
+const DB=process.env.DATABASE;
+
+mongoose.connect(DB,{
+    useNewUrlParser:true,
+    useUnifiedTopology:true,
+
+}).then(()=>{
+    console.log("connection successfull");
+}).catch((e)=>{
+    console.log(e);
+})
 
 const Schemas=new mongoose.Schema({
     name:{
